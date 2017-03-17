@@ -1,0 +1,118 @@
+html{
+	height: 100%
+}
+body{
+	background: url('programista.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.container{
+	width: 100%;
+}
+
+#kafelek1{
+	float: left;
+	width: 100%;
+	min-height: 100%;
+	position: absolute;
+}
+
+#imieinazwisko {
+	float:left;
+	padding-left: 20px;
+	margin-top: 5px;
+	color: #238E23;
+	text-shadow: 1px 2px 1px rgba(0,0,0,0.004);
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale;
+	letter-spacing: 0.2mm;
+	font-size: 25px;
+	font-family: "Indie Flower";
+}
+#info{
+	margin-top: 40px;
+	width: 298px;
+	height: 130px;
+	float:left;
+}
+
+#kafelek1 #przemek {
+	margin-top: 5px;
+	filter: brightness(80%);
+	border: solid 3px #f6f6f6;
+	width: 150px;
+  max-width: 200px;
+	float: left;
+  height: 150px;
+	border-radius: 100%;
+}
+
+footer{
+	position: fixed;
+	bottom: 0;
+	margin: 0 0 0 40%;
+}
+footer > p{
+	line-height: auto;
+	margin: 0;
+	padding: 0;
+	color: silver;
+	filter: brightness(80%);
+	font-family: "Verdana", sans-serif;
+}
+#icons{
+	margin: 0 0 20px 82%;
+	bottom: 0;
+	float: right;
+	width: 13%;
+	height: auto;
+	position: fixed;
+}
+#facebook{
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin: 0 2% 0 5px;
+}
+#github{
+	float:left;
+	width: 50px;
+	height: 50px;
+	margin: 0 0 0 2%;
+}
+#message{
+	float:left;
+	width: 50px;
+	height: 50px;
+	margin: 0 0 0 4%;
+}
+
+#icons a :hover{
+	filter: brightness(60%);
+}
+#icons p :hover{
+	filter: brightness(60%);
+}
+
+#kontaktdiv{
+	float:left;
+	width: 100%;
+	height: auto;
+	margin: 0px 0 10px 0;
+}
+#kontaktdiv p{
+	padding-top: 10px;
+	margin-left: 13px;
+	color: silver;
+	font-size: 17px;
+	font-weight: bold;
+	text-shadow: 1px 0.5px 2px black;
+}
+#wiadomosc{
+	cursor: pointer;
+}
+form{
+	margin-top: 250px;
+}
