@@ -7,6 +7,7 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+	overflow: hidden;
 }
 .container{
 	width: 100%;
@@ -16,31 +17,33 @@ body{
 	float: left;
 	width: 100%;
 	min-height: 100%;
-	position: absolute;
+	position: relative;
 }
 
 #imieinazwisko {
 	float:left;
-	padding-left: 20px;
+	padding-left: 30px;
 	margin-top: 5px;
-	color: #238E23;
-	text-shadow: 1px 2px 1px rgba(0,0,0,0.004);
+	background: -webkit-linear-gradient(#D9D9F3, #888);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.005);
 	-webkit-font-smoothing: antialiased !important;
 	-moz-osx-font-smoothing: grayscale;
 	letter-spacing: 0.2mm;
-	font-size: 25px;
-	font-family: "Indie Flower";
+	font-size: 22px;
+	font-family: "Verdana";
+	font-weight: bold;
 }
 #info{
 	margin-top: 40px;
-	width: 298px;
+	width: 398px;
 	height: 130px;
 	float:left;
 }
 
 #kafelek1 #przemek {
 	margin-top: 5px;
-	filter: brightness(80%);
 	border: solid 3px #f6f6f6;
 	width: 150px;
   max-width: 200px;
@@ -59,7 +62,6 @@ footer > p{
 	margin: 0;
 	padding: 0;
 	color: silver;
-	filter: brightness(80%);
 	font-family: "Verdana", sans-serif;
 }
 #icons{
@@ -105,7 +107,8 @@ footer > p{
 #kontaktdiv p{
 	padding-top: 10px;
 	margin-left: 13px;
-	color: silver;
+	color: white;
+	filter: brightness(75%);
 	font-size: 17px;
 	font-weight: bold;
 	text-shadow: 1px 0.5px 2px black;
@@ -115,4 +118,33 @@ footer > p{
 }
 form{
 	margin-top: 250px;
+}
+
+#preloader {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background: rgba(217,217,217,1);
+	background: -moz-linear-gradient(left, rgba(217,217,217,1) 0%, rgba(234,232,234,1) 17%, rgba(250,247,250,1) 33%, rgba(252,252,252,1) 68%, rgba(209,209,209,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(217,217,217,1)), color-stop(17%, rgba(234,232,234,1)), color-stop(33%, rgba(250,247,250,1)), color-stop(68%, rgba(252,252,252,1)), color-stop(100%, rgba(209,209,209,1)));
+	background: -webkit-linear-gradient(left, rgba(217,217,217,1) 0%, rgba(234,232,234,1) 17%, rgba(250,247,250,1) 33%, rgba(252,252,252,1) 68%, rgba(209,209,209,1) 100%);
+	background: -o-linear-gradient(left, rgba(217,217,217,1) 0%, rgba(234,232,234,1) 17%, rgba(250,247,250,1) 33%, rgba(252,252,252,1) 68%, rgba(209,209,209,1) 100%);
+	background: -ms-linear-gradient(left, rgba(217,217,217,1) 0%, rgba(234,232,234,1) 17%, rgba(250,247,250,1) 33%, rgba(252,252,252,1) 68%, rgba(209,209,209,1) 100%);
+	background: linear-gradient(to right, rgba(217,217,217,1) 0%, rgba(234,232,234,1) 17%, rgba(250,247,250,1) 33%, rgba(252,252,252,1) 68%, rgba(209,209,209,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9d9d9', endColorstr='#d1d1d1', GradientType=1 );
+	z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+	width:200px;
+	height:200px;
+	position:absolute;
+	left:50%; /* centers the loading animation horizontally one the screen */
+	top:50%; /* centers the loading animation vertically one the screen */
+	background-image:url('status.gif'); /* path to your loading animation */
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:-100px 0 0 -100px; /* is width and height divided by two */
 }
